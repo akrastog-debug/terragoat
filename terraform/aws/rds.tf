@@ -80,7 +80,7 @@ resource "aws_rds_cluster" "app5-rds-cluster" {
   kms_key_id = "CKV_ANY"
   copy_tags_to_snapshot = true
   enabled_cloudwatch_logs_exports = "CKV_ANY"
-  storage_encrypted = true
+  storage_encrypted = false
 }
 
 resource "aws_rds_cluster" "app6-rds-cluster" {
